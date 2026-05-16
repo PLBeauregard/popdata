@@ -1,0 +1,102 @@
+add_columns             Add columns to data.frame.
+add_rows                Add rows to data.frame/matrix/table
+apply_labels            Set variable labels/value labels on variables
+                        in the data.frame
+as.category             Convert dichotomy data.frame/matrix to
+                        data.frame with category encoding
+as.datatable_widget     Create an HTML table widget for usage with
+                        Shiny
+as.dichotomy            Convert variable (possibly multiple choice
+                        question) to data.frame/matrix of dummy
+                        variables.
+as.etable               Convert data.frame/matrix to object of class
+                        'etable'
+as.labelled             Recode vector into numeric vector with value
+                        labels
+as_huxtable.etable      Convert table to huxtable
+compare_proportions     Calculate significance (p-values) of
+                        differences between proportions/means
+compute                 Modify data.frame/modify subset of the
+                        data.frame
+count_if                Count/sum/average/other functions on values
+                        that meet a criterion
+criteria                Criteria functions
+cross_cases             Cross tabulation with support of labels,
+                        weights and multiple response variables.
+cross_fun               Cross-tabulation with custom summary function.
+do_repeat               Repeats the same transformations on a specified
+                        set of variables/values
+drop_empty_rows         Drop empty (with all NA's) rows/columns from
+                        data.frame/table
+expss                   expss: Tables with Labels and Some Useful
+                        Functions from Spreadsheets and SPSS Statistics
+expss.options           Options for controlling behavior of the package
+fctr                    Convert labelled variable to factor
+fre                     Simple frequencies with support of labels,
+                        weights and multiple response variables.
+htmlTable.etable        Outputting HTML tables in RStudio viewer/R
+                        Notebooks
+if_na                   Replace values with NA and vice-versa
+info                    Provides variables description for dataset
+keep                    Keep or drop elements by name/criteria in
+                        data.frame/matrix
+match_row               Match finds value in rows or columns/index
+                        returns value by index from rows or columns
+merge.etable            Merge two tables/data.frames
+mrset                   Create multiple response set/multiple dichotomy
+                        set from variables
+name_dots               Bug workaround
+names2labels            Replace data.frame/list names with
+                        corresponding variables labels.
+nest                    Compute nested variable(-s) from several
+                        variables
+net                     Add subtotal to a set of categories
+prepend_values          Prepend values/variable names to value/variable
+                        labels
+product_test            Data from product test of chocolate
+                        confectionary
+prop                    Compute proportions from numeric
+                        vector/matrix/data.frame
+qc                      Create vector of characters from unquoted
+                        strings (variable names)
+read_spss               Read an SPSS Data File
+recode                  Change, rearrange or consolidate the values of
+                        an existing or new variable. Inspired by the
+                        RECODE command from SPSS.
+set_caption             Add caption to the table
+sheet                   Make data.frame without conversion to factors
+                        and without fixing names
+sort_asc                Sort data.frames/matrices/vectors
+split_by                Splits data.frame into list of data.frames that
+                        can be analyzed separately
+split_labels            Split character vector to matrix/split columns
+                        in data.frame
+sum_row                 Compute sum/mean/sd/median/max/min/custom
+                        function on rows/columns
+tab_significance_options
+                        Mark significant differences between columns in
+                        the table
+tab_sort_asc            Partially (inside blocks) sort
+                        tables/data.frames
+tables                  Functions for custom tables construction
+text_to_columns         Make data.frame from text
+unlab                   Drop variable label and value labels
+val_lab                 Set or get value labels
+values2labels           Replace vector/matrix/data.frame/list values
+                        with corresponding value labels.
+var_lab                 Set or get variable label
+vars                    Get variables/range of variables by name/by
+                        pattern.
+vectors                 Infix operations on vectors - append, diff,
+                        intersection, union, replication
+w_mean                  Compute various weighted statistics
+weight_by               Create dataset according to its frequency
+                        weights
+where                   Subset (filter)
+                        data.frames/matrices/vectors/lists
+window_fun              Function over grouping variables (window
+                        function)
+write_labelled_csv      Write labelled data to file or export file to
+                        SPSS syntax.
+xl_write                Write tables and other objects to an xlsx file
+                        with formatting

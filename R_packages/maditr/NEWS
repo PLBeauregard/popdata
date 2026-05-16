@@ -1,0 +1,77 @@
+0.8.4 (2024-01-11)
+================
+* very minor fixes
+
+0.8.3 (2022-04-02)
+================
+* now 'rows' respects 'etable' class
+
+0.8.2 (2021-05-25)
+================
+* fix serious bug with '%to%' in the multiassignment expression in the 'let'
+
+0.8.1 (2021-05-18)
+================
+* new function 'rows' for selecting rows/filtering dataset
+* new function 'columns' for selecting columns
+* 'columns' can be used inside expressions to select range of variables
+* new functions 'to_long' and 'to_wide' for converting dataset to long form and vice versa
+* remove `.res` variable from progress bar indicator in 'to_list'
+* bugfixes
+
+0.7.4 (2020-07-29)
+================
+* fix tests for R before 4.0
+* convert documentation to markdown
+
+0.7.3 (2020-07-22)
+================
+* fixes for data.table 1.13
+* add new functions: vlookup and xlookup
+
+0.7.1 (2020-04-27)
+================
+* 'dt_select' now can match variables by Perl-style regular expression, e. g. '^Petal' returns all variables which start with 'Petal'.
+* new functions 'to_list', 'to_vec', 'to_df', 'to_dfc' for convenient lists processing. They have a little pythonic style interface: 'to_list(1:10, if(.x %% 2 == 0) .x)' will return only even numbers. For details see '?to_list'.
+* new functions 'take_all' and 'let_all' for summarizing and aggregating multiple variables.
+* bugfixes
+
+0.6.3 (2019-12-03)
+================
+* 'let' and 'take' now generics (issue #8)
+* add functions 'dt_count', 'dt_add_count', 'dt_top_n' (issue #5)
+* bumped requried data.table version
+* move tests from testthat to tinytest
+* bugfixes
+
+
+0.6.2 (2019-06-09)
+================
+* add 'sort_by'
+* minor bugfixes
+
+0.6.1 (2019-01-03)
+================
+* fix tests
+* add 'coalesce' function
+* add 'data.frame' method for 'rollup', 'cube' and 'groupingsets'
+* minor fixes
+
+0.6.0 (2018-08-12)
+================
+* add joins: 'dt_left_join', 'dt_right_join', 'dt_inner_join', 'dt_full_join', 'dt_anti_join', 'dt_semi_join'
+
+0.5.2 (2018-07-18)
+================
+* add 'dcast' and 'melt' methods for data.frame
+* add ':=' operator for 'take'/'take_if'/'summarize' for parametric evaluation
+
+0.5.1 (2018-05-09)
+================
+* fix stupid bug with incorrect minimal version of data.table in DESCRIPTION
+* add 'dplyr'-like interface.
+
+0.5.0 (2018-05-05)
+================
+* initial release
+

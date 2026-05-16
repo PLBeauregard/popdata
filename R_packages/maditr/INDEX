@@ -1,0 +1,16 @@
+coalesce                Return first non-missing element
+columns                 Selects columns or rows from the data set
+copy                    Copy an entire object
+dt_count                Additional useful functions
+dt_left_join            Join two data.frames by common columns.
+dt_mutate               'dplyr'-like interface for data.table.
+let_if                  Modify, aggregate, select or filter
+                        data.frame/data.table
+maditr-package          maditr: Pipe-Style Interface for 'data.table'
+query_if                One-to-one interface for data.table '[' method
+text_expand             Evaluate expressions in curly brackets inside
+                        strings
+to_list                 Apply an expression to each element of a list
+                        or vector
+to_long                 Convert data to long or to wide form
+vlookup                 Look up values in dictionary.

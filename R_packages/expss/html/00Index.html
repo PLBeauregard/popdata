@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html>
+<head><title>R: Tables, Labels and Some Useful Functions from Spreadsheets and
+'SPSS' Statistics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+<h1> Tables, Labels and Some Useful Functions from Spreadsheets and
+'SPSS' Statistics
+<img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]" />
+</h1>
+<hr/>
+<div style="text-align: center;">
+<a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
+<a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
+</div><h2>Documentation for package &lsquo;expss&rsquo; version 0.11.6</h2>
+
+<ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+<li><a href="../doc/index.html">User guides, package vignettes and other documentation.</a></li>
+<li><a href="../NEWS">Package NEWS</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<p style="text-align: center;">
+<a href="#A">A</a>
+<a href="#C">C</a>
+<a href="#D">D</a>
+<a href="#E">E</a>
+<a href="#F">F</a>
+<a href="#G">G</a>
+<a href="#H">H</a>
+<a href="#I">I</a>
+<a href="#K">K</a>
+<a href="#L">L</a>
+<a href="#M">M</a>
+<a href="#N">N</a>
+<a href="#O">O</a>
+<a href="#P">P</a>
+<a href="#Q">Q</a>
+<a href="#R">R</a>
+<a href="#S">S</a>
+<a href="#T">T</a>
+<a href="#U">U</a>
+<a href="#V">V</a>
+<a href="#W">W</a>
+<a href="#X">X</a>
+<a href="#misc">misc</a>
+</p>
+
+
+<h2><a id="A">-- A --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="add_columns.html">add_columns</a></td>
+<td>Add columns to data.frame.</td></tr>
+<tr><td style="width: 25%;"><a href="var_lab.html">add_labelled_class</a></td>
+<td>Set or get variable label</td></tr>
+<tr><td style="width: 25%;"><a href="add_rows.html">add_rows</a></td>
+<td>Add rows to data.frame/matrix/table</td></tr>
+<tr><td style="width: 25%;"><a href="add_rows.html">add_rows.data.frame</a></td>
+<td>Add rows to data.frame/matrix/table</td></tr>
+<tr><td style="width: 25%;"><a href="significance.html">add_sig_labels</a></td>
+<td>Mark significant differences between columns in the table</td></tr>
+<tr><td style="width: 25%;"><a href="val_lab.html">add_val_lab</a></td>
+<td>Set or get value labels</td></tr>
+<tr><td style="width: 25%;"><a href="val_lab.html">add_val_lab&lt;-</a></td>
+<td>Set or get value labels</td></tr>
+<tr><td style="width: 25%;"><a href="sum_row.html">all_in_col</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="sum_row.html">all_in_row</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">and</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="sum_row.html">any_in_col</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="sum_row.html">any_in_row</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="sum_row.html">apply_col</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">apply_col_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">apply_dictionary</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="apply_labels.html">apply_labels</a></td>
+<td>Set variable labels/value labels on variables in the data.frame</td></tr>
+<tr><td style="width: 25%;"><a href="sum_row.html">apply_row</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">apply_row_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="as.category.html">as.category</a></td>
+<td>Convert dichotomy data.frame/matrix to data.frame with category encoding</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">as.criterion</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="as.datatable_widget.html">as.datatable_widget</a></td>
+<td>Create an HTML table widget for usage with Shiny</td></tr>
+<tr><td style="width: 25%;"><a href="as.datatable_widget.html">as.datatable_widget.etable</a></td>
+<td>Create an HTML table widget for usage with Shiny</td></tr>
+<tr><td style="width: 25%;"><a href="as.datatable_widget.html">as.datatable_widget.with_caption</a></td>
+<td>Create an HTML table widget for usage with Shiny</td></tr>
+<tr><td style="width: 25%;"><a href="as.dichotomy.html">as.dichotomy</a></td>
+<td>Convert variable (possibly multiple choice question) to data.frame/matrix of dummy variables.</td></tr>
+<tr><td style="width: 25%;"><a href="as.etable.html">as.etable</a></td>
+<td>Convert data.frame/matrix to object of class 'etable'</td></tr>
+<tr><td style="width: 25%;"><a href="as.labelled.html">as.labelled</a></td>
+<td>Recode vector into numeric vector with value labels</td></tr>
+<tr><td style="width: 25%;"><a href="sheet.html">as.sheet</a></td>
+<td>Make data.frame without conversion to factors and without fixing names</td></tr>
+<tr><td style="width: 25%;"><a href="as_huxtable.html">as_hux.etable</a></td>
+<td>Convert table to huxtable</td></tr>
+<tr><td style="width: 25%;"><a href="as_huxtable.html">as_huxtable.etable</a></td>
+<td>Convert table to huxtable</td></tr>
+<tr><td style="width: 25%;"><a href="do_repeat.html">as_is</a></td>
+<td>Repeats the same transformations on a specified set of variables/values</td></tr>
+<tr><td style="width: 25%;"><a href="val_lab.html">autonum</a></td>
+<td>Set or get value labels</td></tr>
+</table>
+
+<h2><a id="C">-- C --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="compute.html">calc</a></td>
+<td>Modify data.frame/modify subset of the data.frame</td></tr>
+<tr><td style="width: 25%;"><a href="compute.html">calculate</a></td>
+<td>Modify data.frame/modify subset of the data.frame</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">calc_cro</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">calc_cro_cases</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">calc_cro_cpct</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">calc_cro_cpct_responses</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">calc_cro_fun</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">calc_cro_fun_df</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">calc_cro_mean</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">calc_cro_mean_sd_n</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">calc_cro_median</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">calc_cro_pearson</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">calc_cro_rpct</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">calc_cro_spearman</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">calc_cro_sum</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">calc_cro_tpct</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+<tr><td style="width: 25%;"><a href="significance.html">cell_chisq</a></td>
+<td>Mark significant differences between columns in the table</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">combine_functions</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="compare_proportions.html">compare_means</a></td>
+<td>Calculate significance (p-values) of differences between proportions/means</td></tr>
+<tr><td style="width: 25%;"><a href="compare_proportions.html">compare_proportions</a></td>
+<td>Calculate significance (p-values) of differences between proportions/means</td></tr>
+<tr><td style="width: 25%;"><a href="compute.html">compute</a></td>
+<td>Modify data.frame/modify subset of the data.frame</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">contains</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="recode.html">copy</a></td>
+<td>Change, rearrange or consolidate the values of an existing or new variable. Inspired by the RECODE command from SPSS.</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">count_col_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">count_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">count_row_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">create_dictionary</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">criteria</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">cro</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">cross_cases</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">cross_cpct</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">cross_cpct_responses</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">cross_fun</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">cross_fun_df</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">cross_mean</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">cross_mean_sd_n</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">cross_median</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">cross_pearson</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">cross_rpct</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">cross_spearman</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">cross_sum</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">cross_tpct</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">cro_cases</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">cro_cpct</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">cro_cpct_responses</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">cro_fun</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">cro_fun_df</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">cro_mean</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">cro_mean_sd_n</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">cro_median</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">cro_pearson</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">cro_rpct</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">cro_spearman</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_fun.html">cro_sum</a></td>
+<td>Cross-tabulation with custom summary function.</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">cro_tpct</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+</table>
+
+<h2><a id="D">-- D --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="compute.html">do_if</a></td>
+<td>Modify data.frame/modify subset of the data.frame</td></tr>
+<tr><td style="width: 25%;"><a href="do_repeat.html">do_repeat</a></td>
+<td>Repeats the same transformations on a specified set of variables/values</td></tr>
+<tr><td style="width: 25%;"><a href="unlab.html">drop_all_labels</a></td>
+<td>Drop variable label and value labels</td></tr>
+<tr><td style="width: 25%;"><a href="drop_empty_rows.html">drop_c</a></td>
+<td>Drop empty (with all NA's) rows/columns from data.frame/table</td></tr>
+<tr><td style="width: 25%;"><a href="drop_empty_rows.html">drop_empty_columns</a></td>
+<td>Drop empty (with all NA's) rows/columns from data.frame/table</td></tr>
+<tr><td style="width: 25%;"><a href="drop_empty_rows.html">drop_empty_rows</a></td>
+<td>Drop empty (with all NA's) rows/columns from data.frame/table</td></tr>
+<tr><td style="width: 25%;"><a href="drop_empty_rows.html">drop_r</a></td>
+<td>Drop empty (with all NA's) rows/columns from data.frame/table</td></tr>
+<tr><td style="width: 25%;"><a href="drop_empty_rows.html">drop_rc</a></td>
+<td>Drop empty (with all NA's) rows/columns from data.frame/table</td></tr>
+<tr><td style="width: 25%;"><a href="val_lab.html">drop_unused_labels</a></td>
+<td>Set or get value labels</td></tr>
+<tr><td style="width: 25%;"><a href="val_lab.html">drop_val_labs</a></td>
+<td>Set or get value labels</td></tr>
+<tr><td style="width: 25%;"><a href="var_lab.html">drop_var_labs</a></td>
+<td>Set or get variable label</td></tr>
+<tr><td style="width: 25%;"><a href="as.dichotomy.html">dummy</a></td>
+<td>Convert variable (possibly multiple choice question) to data.frame/matrix of dummy variables.</td></tr>
+<tr><td style="width: 25%;"><a href="as.dichotomy.html">dummy1</a></td>
+<td>Convert variable (possibly multiple choice question) to data.frame/matrix of dummy variables.</td></tr>
+</table>
+
+<h2><a id="E">-- E --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="criteria.html">eq</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">equals</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="keep.html">except</a></td>
+<td>Keep or drop elements by name/criteria in data.frame/matrix</td></tr>
+<tr><td style="width: 25%;"><a href="expss.html">expss</a></td>
+<td>expss: Tables with Labels and Some Useful Functions from Spreadsheets and SPSS Statistics</td></tr>
+<tr><td style="width: 25%;"><a href="expss.options.html">expss.options</a></td>
+<td>Options for controlling behavior of the package</td></tr>
+<tr><td style="width: 25%;"><a href="expss.options.html">expss_digits</a></td>
+<td>Options for controlling behavior of the package</td></tr>
+<tr><td style="width: 25%;"><a href="expss.options.html">expss_disable_value_labels_support</a></td>
+<td>Options for controlling behavior of the package</td></tr>
+<tr><td style="width: 25%;"><a href="expss.options.html">expss_enable_value_labels_support</a></td>
+<td>Options for controlling behavior of the package</td></tr>
+<tr><td style="width: 25%;"><a href="expss.options.html">expss_enable_value_labels_support_extreme</a></td>
+<td>Options for controlling behavior of the package</td></tr>
+<tr><td style="width: 25%;"><a href="expss.options.html">expss_fix_encoding_off</a></td>
+<td>Options for controlling behavior of the package</td></tr>
+<tr><td style="width: 25%;"><a href="expss.options.html">expss_fix_encoding_on</a></td>
+<td>Options for controlling behavior of the package</td></tr>
+<tr><td style="width: 25%;"><a href="expss.options.html">expss_fre_stat_lab</a></td>
+<td>Options for controlling behavior of the package</td></tr>
+<tr><td style="width: 25%;"><a href="expss.options.html">expss_output_commented</a></td>
+<td>Options for controlling behavior of the package</td></tr>
+<tr><td style="width: 25%;"><a href="expss.options.html">expss_output_default</a></td>
+<td>Options for controlling behavior of the package</td></tr>
+<tr><td style="width: 25%;"><a href="expss.options.html">expss_output_huxtable</a></td>
+<td>Options for controlling behavior of the package</td></tr>
+<tr><td style="width: 25%;"><a href="expss.options.html">expss_output_raw</a></td>
+<td>Options for controlling behavior of the package</td></tr>
+<tr><td style="width: 25%;"><a href="expss.options.html">expss_output_rnotebook</a></td>
+<td>Options for controlling behavior of the package</td></tr>
+<tr><td style="width: 25%;"><a href="expss.options.html">expss_output_viewer</a></td>
+<td>Options for controlling behavior of the package</td></tr>
+<tr><td style="width: 25%;"><a href="expss.options.html">expss_round_half_to_even</a></td>
+<td>Options for controlling behavior of the package</td></tr>
+</table>
+
+<h2><a id="F">-- F --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="fctr.html">fctr</a></td>
+<td>Convert labelled variable to factor</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">fixed</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="fre.html">fre</a></td>
+<td>Simple frequencies with support of labels, weights and multiple response variables.</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">from</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="recode.html">from_to</a></td>
+<td>Change, rearrange or consolidate the values of an existing or new variable. Inspired by the RECODE command from SPSS.</td></tr>
+</table>
+
+<h2><a id="G">-- G --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="criteria.html">ge</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="set_caption.html">get_caption</a></td>
+<td>Add caption to the table</td></tr>
+<tr><td style="width: 25%;"><a href="expss.options.html">get_expss_digits</a></td>
+<td>Options for controlling behavior of the package</td></tr>
+<tr><td style="width: 25%;"><a href="expss.options.html">get_expss_rounding</a></td>
+<td>Options for controlling behavior of the package</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">greater</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">greater_or_equal</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">gt</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">gte</a></td>
+<td>Criteria functions</td></tr>
+</table>
+
+<h2><a id="H">-- H --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="count_if.html">has</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">has_label</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="recode.html">hi</a></td>
+<td>Change, rearrange or consolidate the values of an existing or new variable. Inspired by the RECODE command from SPSS.</td></tr>
+<tr><td style="width: 25%;"><a href="net.html">hide</a></td>
+<td>Add subtotal to a set of categories</td></tr>
+<tr><td style="width: 25%;"><a href="htmlTable.etable.html">htmlTable.etable</a></td>
+<td>Outputting HTML tables in RStudio viewer/R Notebooks</td></tr>
+<tr><td style="width: 25%;"><a href="htmlTable.etable.html">htmlTable.list</a></td>
+<td>Outputting HTML tables in RStudio viewer/R Notebooks</td></tr>
+<tr><td style="width: 25%;"><a href="htmlTable.etable.html">htmlTable.with_caption</a></td>
+<td>Outputting HTML tables in RStudio viewer/R Notebooks</td></tr>
+</table>
+
+<h2><a id="I">-- I --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="recode.html">ifs</a></td>
+<td>Change, rearrange or consolidate the values of an existing or new variable. Inspired by the RECODE command from SPSS.</td></tr>
+<tr><td style="width: 25%;"><a href="if_na.html">if_na</a></td>
+<td>Replace values with NA and vice-versa</td></tr>
+<tr><td style="width: 25%;"><a href="if_na.html">if_na&lt;-</a></td>
+<td>Replace values with NA and vice-versa</td></tr>
+<tr><td style="width: 25%;"><a href="recode.html">if_val</a></td>
+<td>Change, rearrange or consolidate the values of an existing or new variable. Inspired by the RECODE command from SPSS.</td></tr>
+<tr><td style="width: 25%;"><a href="recode.html">if_val&lt;-</a></td>
+<td>Change, rearrange or consolidate the values of an existing or new variable. Inspired by the RECODE command from SPSS.</td></tr>
+<tr><td style="width: 25%;"><a href="match_row.html">index_col</a></td>
+<td>Match finds value in rows or columns/index returns value by index from rows or columns</td></tr>
+<tr><td style="width: 25%;"><a href="match_row.html">index_row</a></td>
+<td>Match finds value in rows or columns/index returns value by index from rows or columns</td></tr>
+<tr><td style="width: 25%;"><a href="vars.html">indirect</a></td>
+<td>Get variables/range of variables by name/by pattern.</td></tr>
+<tr><td style="width: 25%;"><a href="vars.html">indirect_list</a></td>
+<td>Get variables/range of variables by name/by pattern.</td></tr>
+<tr><td style="width: 25%;"><a href="info.html">info</a></td>
+<td>Provides variables description for dataset</td></tr>
+<tr><td style="width: 25%;"><a href="as.category.html">is.category</a></td>
+<td>Convert dichotomy data.frame/matrix to data.frame with category encoding</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">is.criterion</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="as.dichotomy.html">is.dichotomy</a></td>
+<td>Convert variable (possibly multiple choice question) to data.frame/matrix of dummy variables.</td></tr>
+<tr><td style="width: 25%;"><a href="as.etable.html">is.etable</a></td>
+<td>Convert data.frame/matrix to object of class 'etable'</td></tr>
+<tr><td style="width: 25%;"><a href="as.labelled.html">is.labelled</a></td>
+<td>Recode vector into numeric vector with value labels</td></tr>
+<tr><td style="width: 25%;"><a href="set_caption.html">is.with_caption</a></td>
+<td>Add caption to the table</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">is_max</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">is_min</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">is_na</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">items</a></td>
+<td>Criteria functions</td></tr>
+</table>
+
+<h2><a id="K">-- K --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="keep.html">keep</a></td>
+<td>Keep or drop elements by name/criteria in data.frame/matrix</td></tr>
+<tr><td style="width: 25%;"><a href="htmlTable.etable.html">knit_print.etable</a></td>
+<td>Outputting HTML tables in RStudio viewer/R Notebooks</td></tr>
+<tr><td style="width: 25%;"><a href="htmlTable.etable.html">knit_print.with_caption</a></td>
+<td>Outputting HTML tables in RStudio viewer/R Notebooks</td></tr>
+</table>
+
+<h2><a id="L">-- L --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="val_lab.html">lab_num</a></td>
+<td>Set or get value labels</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">le</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">less</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">less_or_equal</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">like</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="recode.html">lo</a></td>
+<td>Change, rearrange or consolidate the values of an existing or new variable. Inspired by the RECODE command from SPSS.</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">lt</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">lte</a></td>
+<td>Criteria functions</td></tr>
+</table>
+
+<h2><a id="M">-- M --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="val_lab.html">make_labels</a></td>
+<td>Set or get value labels</td></tr>
+<tr><td style="width: 25%;"><a href="split_labels.html">make_subheadings</a></td>
+<td>Split character vector to matrix/split columns in data.frame</td></tr>
+<tr><td style="width: 25%;"><a href="match_row.html">match_col</a></td>
+<td>Match finds value in rows or columns/index returns value by index from rows or columns</td></tr>
+<tr><td style="width: 25%;"><a href="match_row.html">match_row</a></td>
+<td>Match finds value in rows or columns/index returns value by index from rows or columns</td></tr>
+<tr><td style="width: 25%;"><a href="sum_row.html">max_col</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">max_col_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">max_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="sum_row.html">max_row</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">max_row_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="mrset.html">mdset</a></td>
+<td>Create multiple response set/multiple dichotomy set from variables</td></tr>
+<tr><td style="width: 25%;"><a href="mrset.html">mdset_f</a></td>
+<td>Create multiple response set/multiple dichotomy set from variables</td></tr>
+<tr><td style="width: 25%;"><a href="mrset.html">mdset_p</a></td>
+<td>Create multiple response set/multiple dichotomy set from variables</td></tr>
+<tr><td style="width: 25%;"><a href="mrset.html">mdset_t</a></td>
+<td>Create multiple response set/multiple dichotomy set from variables</td></tr>
+<tr><td style="width: 25%;"><a href="sum_row.html">mean_col</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">mean_col_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">mean_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="sum_row.html">mean_row</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">mean_row_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="sum_row.html">median_col</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">median_col_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">median_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="sum_row.html">median_row</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">median_row_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="merge.etable.html">merge.etable</a></td>
+<td>Merge two tables/data.frames</td></tr>
+<tr><td style="width: 25%;"><a href="sum_row.html">min_col</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">min_col_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">min_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="sum_row.html">min_row</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">min_row_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="if_na.html">mis_val</a></td>
+<td>Replace values with NA and vice-versa</td></tr>
+<tr><td style="width: 25%;"><a href="if_na.html">mis_val&lt;-</a></td>
+<td>Replace values with NA and vice-versa</td></tr>
+<tr><td style="width: 25%;"><a href="compute.html">modify</a></td>
+<td>Modify data.frame/modify subset of the data.frame</td></tr>
+<tr><td style="width: 25%;"><a href="compute.html">modify_if</a></td>
+<td>Modify data.frame/modify subset of the data.frame</td></tr>
+<tr><td style="width: 25%;"><a href="mrset.html">mrset</a></td>
+<td>Create multiple response set/multiple dichotomy set from variables</td></tr>
+<tr><td style="width: 25%;"><a href="mrset.html">mrset_f</a></td>
+<td>Create multiple response set/multiple dichotomy set from variables</td></tr>
+<tr><td style="width: 25%;"><a href="mrset.html">mrset_p</a></td>
+<td>Create multiple response set/multiple dichotomy set from variables</td></tr>
+<tr><td style="width: 25%;"><a href="mrset.html">mrset_t</a></td>
+<td>Create multiple response set/multiple dichotomy set from variables</td></tr>
+</table>
+
+<h2><a id="N">-- N --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="names2labels.html">n2l</a></td>
+<td>Replace data.frame/list names with corresponding variables labels.</td></tr>
+<tr><td style="width: 25%;"><a href="names2labels.html">names2labels</a></td>
+<td>Replace data.frame/list names with corresponding variables labels.</td></tr>
+<tr><td style="width: 25%;"><a href="name_dots.html">name_dots</a></td>
+<td>Bug workaround</td></tr>
+<tr><td style="width: 25%;"><a href="if_na.html">na_if</a></td>
+<td>Replace values with NA and vice-versa</td></tr>
+<tr><td style="width: 25%;"><a href="if_na.html">na_if&lt;-</a></td>
+<td>Replace values with NA and vice-versa</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">ne</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">neq</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="nest.html">nest</a></td>
+<td>Compute nested variable(-s) from several variables</td></tr>
+<tr><td style="width: 25%;"><a href="net.html">net</a></td>
+<td>Add subtotal to a set of categories</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">not</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">not_equals</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">not_na</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="val_lab.html">num_lab</a></td>
+<td>Set or get value labels</td></tr>
+<tr><td style="width: 25%;"><a href="vectors.html">n_diff</a></td>
+<td>Infix operations on vectors - append, diff, intersection, union, replication</td></tr>
+<tr><td style="width: 25%;"><a href="vectors.html">n_intersect</a></td>
+<td>Infix operations on vectors - append, diff, intersection, union, replication</td></tr>
+</table>
+
+<h2><a id="O">-- O --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">old_read_labelled_csv</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">old_write_labelled_csv</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">or</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">other</a></td>
+<td>Criteria functions</td></tr>
+</table>
+
+<h2><a id="P">-- P --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="criteria.html">perl</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="prepend_values.html">prepend_all</a></td>
+<td>Prepend values/variable names to value/variable labels</td></tr>
+<tr><td style="width: 25%;"><a href="prepend_values.html">prepend_names</a></td>
+<td>Prepend values/variable names to value/variable labels</td></tr>
+<tr><td style="width: 25%;"><a href="prepend_values.html">prepend_values</a></td>
+<td>Prepend values/variable names to value/variable labels</td></tr>
+<tr><td style="width: 25%;"><a href="product_test.html">product_test</a></td>
+<td>Data from product test of chocolate confectionary</td></tr>
+<tr><td style="width: 25%;"><a href="prop.html">prop</a></td>
+<td>Compute proportions from numeric vector/matrix/data.frame</td></tr>
+<tr><td style="width: 25%;"><a href="prop.html">prop_col</a></td>
+<td>Compute proportions from numeric vector/matrix/data.frame</td></tr>
+<tr><td style="width: 25%;"><a href="prop.html">prop_row</a></td>
+<td>Compute proportions from numeric vector/matrix/data.frame</td></tr>
+</table>
+
+<h2><a id="Q">-- Q --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="qc.html">qc</a></td>
+<td>Create vector of characters from unquoted strings (variable names)</td></tr>
+<tr><td style="width: 25%;"><a href="qc.html">qe</a></td>
+<td>Create vector of characters from unquoted strings (variable names)</td></tr>
+</table>
+
+<h2><a id="R">-- R --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">read_labelled_csv</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">read_labelled_csv2</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">read_labelled_fst</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">read_labelled_tab</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">read_labelled_tab2</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">read_labelled_xlsx</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="read_spss.html">read_spss</a></td>
+<td>Read an SPSS Data File</td></tr>
+<tr><td style="width: 25%;"><a href="read_spss.html">read_spss_to_list</a></td>
+<td>Read an SPSS Data File</td></tr>
+<tr><td style="width: 25%;"><a href="recode.html">rec</a></td>
+<td>Change, rearrange or consolidate the values of an existing or new variable. Inspired by the RECODE command from SPSS.</td></tr>
+<tr><td style="width: 25%;"><a href="recode.html">rec&lt;-</a></td>
+<td>Change, rearrange or consolidate the values of an existing or new variable. Inspired by the RECODE command from SPSS.</td></tr>
+<tr><td style="width: 25%;"><a href="recode.html">recode</a></td>
+<td>Change, rearrange or consolidate the values of an existing or new variable. Inspired by the RECODE command from SPSS.</td></tr>
+<tr><td style="width: 25%;"><a href="recode.html">recode&lt;-</a></td>
+<td>Change, rearrange or consolidate the values of an existing or new variable. Inspired by the RECODE command from SPSS.</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">regex</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="htmlTable.etable.html">repr_html.etable</a></td>
+<td>Outputting HTML tables in RStudio viewer/R Notebooks</td></tr>
+<tr><td style="width: 25%;"><a href="htmlTable.etable.html">repr_html.with_caption</a></td>
+<td>Outputting HTML tables in RStudio viewer/R Notebooks</td></tr>
+<tr><td style="width: 25%;"><a href="htmlTable.etable.html">repr_text.etable</a></td>
+<td>Outputting HTML tables in RStudio viewer/R Notebooks</td></tr>
+<tr><td style="width: 25%;"><a href="htmlTable.etable.html">repr_text.with_caption</a></td>
+<td>Outputting HTML tables in RStudio viewer/R Notebooks</td></tr>
+</table>
+
+<h2><a id="S">-- S --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="sum_row.html">sd_col</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">sd_col_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">sd_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="sum_row.html">sd_row</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">sd_row_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="set_caption.html">set_caption</a></td>
+<td>Add caption to the table</td></tr>
+<tr><td style="width: 25%;"><a href="val_lab.html">set_val_lab</a></td>
+<td>Set or get value labels</td></tr>
+<tr><td style="width: 25%;"><a href="var_lab.html">set_var_lab</a></td>
+<td>Set or get variable label</td></tr>
+<tr><td style="width: 25%;"><a href="sheet.html">sheet</a></td>
+<td>Make data.frame without conversion to factors and without fixing names</td></tr>
+<tr><td style="width: 25%;"><a href="significance.html">significance</a></td>
+<td>Mark significant differences between columns in the table</td></tr>
+<tr><td style="width: 25%;"><a href="significance.html">significance_cases</a></td>
+<td>Mark significant differences between columns in the table</td></tr>
+<tr><td style="width: 25%;"><a href="significance.html">significance_cell_chisq</a></td>
+<td>Mark significant differences between columns in the table</td></tr>
+<tr><td style="width: 25%;"><a href="significance.html">significance_cpct</a></td>
+<td>Mark significant differences between columns in the table</td></tr>
+<tr><td style="width: 25%;"><a href="significance.html">significance_means</a></td>
+<td>Mark significant differences between columns in the table</td></tr>
+<tr><td style="width: 25%;"><a href="sort_asc.html">sort_asc</a></td>
+<td>Sort data.frames/matrices/vectors</td></tr>
+<tr><td style="width: 25%;"><a href="sort_asc.html">sort_desc</a></td>
+<td>Sort data.frames/matrices/vectors</td></tr>
+<tr><td style="width: 25%;"><a href="split_by.html">split_by</a></td>
+<td>Splits data.frame into list of data.frames that can be analyzed separately</td></tr>
+<tr><td style="width: 25%;"><a href="split_labels.html">split_columns</a></td>
+<td>Split character vector to matrix/split columns in data.frame</td></tr>
+<tr><td style="width: 25%;"><a href="split_labels.html">split_labels</a></td>
+<td>Split character vector to matrix/split columns in data.frame</td></tr>
+<tr><td style="width: 25%;"><a href="split_by.html">split_off</a></td>
+<td>Splits data.frame into list of data.frames that can be analyzed separately</td></tr>
+<tr><td style="width: 25%;"><a href="split_labels.html">split_table_to_df</a></td>
+<td>Split character vector to matrix/split columns in data.frame</td></tr>
+<tr><td style="width: 25%;"><a href="net.html">subtotal</a></td>
+<td>Add subtotal to a set of categories</td></tr>
+<tr><td style="width: 25%;"><a href="sum_row.html">sum_col</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">sum_col_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">sum_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="sum_row.html">sum_row</a></td>
+<td>Compute sum/mean/sd/median/max/min/custom function on rows/columns</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">sum_row_if</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+</table>
+
+<h2><a id="T">-- T --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="tables.html">tables</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_caption</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_cells</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_cols</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="significance.html">tab_last_add_sig_labels</a></td>
+<td>Mark significant differences between columns in the table</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_last_hstack</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="significance.html">tab_last_round</a></td>
+<td>Mark significant differences between columns in the table</td></tr>
+<tr><td style="width: 25%;"><a href="significance.html">tab_last_sig_cases</a></td>
+<td>Mark significant differences between columns in the table</td></tr>
+<tr><td style="width: 25%;"><a href="significance.html">tab_last_sig_cell_chisq</a></td>
+<td>Mark significant differences between columns in the table</td></tr>
+<tr><td style="width: 25%;"><a href="significance.html">tab_last_sig_cpct</a></td>
+<td>Mark significant differences between columns in the table</td></tr>
+<tr><td style="width: 25%;"><a href="significance.html">tab_last_sig_means</a></td>
+<td>Mark significant differences between columns in the table</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_last_vstack</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_mis_val</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="net.html">tab_net_cells</a></td>
+<td>Add subtotal to a set of categories</td></tr>
+<tr><td style="width: 25%;"><a href="net.html">tab_net_cols</a></td>
+<td>Add subtotal to a set of categories</td></tr>
+<tr><td style="width: 25%;"><a href="net.html">tab_net_rows</a></td>
+<td>Add subtotal to a set of categories</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_pivot</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="prepend_values.html">tab_prepend_all</a></td>
+<td>Prepend values/variable names to value/variable labels</td></tr>
+<tr><td style="width: 25%;"><a href="prepend_values.html">tab_prepend_names</a></td>
+<td>Prepend values/variable names to value/variable labels</td></tr>
+<tr><td style="width: 25%;"><a href="prepend_values.html">tab_prepend_values</a></td>
+<td>Prepend values/variable names to value/variable labels</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_rows</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_row_label</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="significance.html">tab_significance_options</a></td>
+<td>Mark significant differences between columns in the table</td></tr>
+<tr><td style="width: 25%;"><a href="tab_sort_asc.html">tab_sort_asc</a></td>
+<td>Partially (inside blocks) sort tables/data.frames</td></tr>
+<tr><td style="width: 25%;"><a href="tab_sort_asc.html">tab_sort_desc</a></td>
+<td>Partially (inside blocks) sort tables/data.frames</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_stat_cases</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_stat_cpct</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_stat_cpct_responses</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_stat_fun</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_stat_fun_df</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_stat_max</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_stat_mean</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_stat_mean_sd_n</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_stat_median</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_stat_min</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_stat_rpct</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_stat_sd</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_stat_se</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_stat_sum</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_stat_tpct</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_stat_unweighted_valid_n</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_stat_valid_n</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_subgroup</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="net.html">tab_subtotal_cells</a></td>
+<td>Add subtotal to a set of categories</td></tr>
+<tr><td style="width: 25%;"><a href="net.html">tab_subtotal_cols</a></td>
+<td>Add subtotal to a set of categories</td></tr>
+<tr><td style="width: 25%;"><a href="net.html">tab_subtotal_rows</a></td>
+<td>Add subtotal to a set of categories</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_total_label</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_total_row_position</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_total_statistic</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_transpose</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="tables.html">tab_weight</a></td>
+<td>Functions for custom tables construction</td></tr>
+<tr><td style="width: 25%;"><a href="text_to_columns.html">text_to_columns</a></td>
+<td>Make data.frame from text</td></tr>
+<tr><td style="width: 25%;"><a href="text_to_columns.html">text_to_columns_csv</a></td>
+<td>Make data.frame from text</td></tr>
+<tr><td style="width: 25%;"><a href="text_to_columns.html">text_to_columns_csv2</a></td>
+<td>Make data.frame from text</td></tr>
+<tr><td style="width: 25%;"><a href="text_to_columns.html">text_to_columns_tab</a></td>
+<td>Make data.frame from text</td></tr>
+<tr><td style="width: 25%;"><a href="text_to_columns.html">text_to_columns_tab2</a></td>
+<td>Make data.frame from text</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">thru</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">to</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="cross_cases.html">total</a></td>
+<td>Cross tabulation with support of labels, weights and multiple response variables.</td></tr>
+</table>
+
+<h2><a id="U">-- U --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="net.html">unhide</a></td>
+<td>Add subtotal to a set of categories</td></tr>
+<tr><td style="width: 25%;"><a href="unlab.html">unlab</a></td>
+<td>Drop variable label and value labels</td></tr>
+<tr><td style="width: 25%;"><a href="val_lab.html">unvl</a></td>
+<td>Set or get value labels</td></tr>
+<tr><td style="width: 25%;"><a href="var_lab.html">unvr</a></td>
+<td>Set or get variable label</td></tr>
+<tr><td style="width: 25%;"><a href="w_mean.html">unweighted_valid_n</a></td>
+<td>Compute various weighted statistics</td></tr>
+<tr><td style="width: 25%;"><a href="compute.html">use_labels</a></td>
+<td>Modify data.frame/modify subset of the data.frame</td></tr>
+</table>
+
+<h2><a id="V">-- V --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="values2labels.html">v2l</a></td>
+<td>Replace vector/matrix/data.frame/list values with corresponding value labels.</td></tr>
+<tr><td style="width: 25%;"><a href="if_na.html">valid</a></td>
+<td>Replace values with NA and vice-versa</td></tr>
+<tr><td style="width: 25%;"><a href="w_mean.html">valid_n</a></td>
+<td>Compute various weighted statistics</td></tr>
+<tr><td style="width: 25%;"><a href="values2labels.html">values2labels</a></td>
+<td>Replace vector/matrix/data.frame/list values with corresponding value labels.</td></tr>
+<tr><td style="width: 25%;"><a href="match_row.html">value_col_if</a></td>
+<td>Match finds value in rows or columns/index returns value by index from rows or columns</td></tr>
+<tr><td style="width: 25%;"><a href="match_row.html">value_row_if</a></td>
+<td>Match finds value in rows or columns/index returns value by index from rows or columns</td></tr>
+<tr><td style="width: 25%;"><a href="val_lab.html">val_lab</a></td>
+<td>Set or get value labels</td></tr>
+<tr><td style="width: 25%;"><a href="val_lab.html">val_lab&lt;-</a></td>
+<td>Set or get value labels</td></tr>
+<tr><td style="width: 25%;"><a href="vars.html">vars</a></td>
+<td>Get variables/range of variables by name/by pattern.</td></tr>
+<tr><td style="width: 25%;"><a href="vars.html">vars_list</a></td>
+<td>Get variables/range of variables by name/by pattern.</td></tr>
+<tr><td style="width: 25%;"><a href="var_lab.html">var_lab</a></td>
+<td>Set or get variable label</td></tr>
+<tr><td style="width: 25%;"><a href="var_lab.html">var_lab&lt;-</a></td>
+<td>Set or get variable label</td></tr>
+<tr><td style="width: 25%;"><a href="vectors.html">vectors</a></td>
+<td>Infix operations on vectors - append, diff, intersection, union, replication</td></tr>
+<tr><td style="width: 25%;"><a href="vectors.html">v_diff</a></td>
+<td>Infix operations on vectors - append, diff, intersection, union, replication</td></tr>
+<tr><td style="width: 25%;"><a href="vectors.html">v_intersect</a></td>
+<td>Infix operations on vectors - append, diff, intersection, union, replication</td></tr>
+<tr><td style="width: 25%;"><a href="vectors.html">v_union</a></td>
+<td>Infix operations on vectors - append, diff, intersection, union, replication</td></tr>
+<tr><td style="width: 25%;"><a href="vectors.html">v_xor</a></td>
+<td>Infix operations on vectors - append, diff, intersection, union, replication</td></tr>
+</table>
+
+<h2><a id="W">-- W --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="weight_by.html">weight_by</a></td>
+<td>Create dataset according to its frequency weights</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">when</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="where.html">where</a></td>
+<td>Subset (filter) data.frames/matrices/vectors/lists</td></tr>
+<tr><td style="width: 25%;"><a href="window_fun.html">window_fun</a></td>
+<td>Function over grouping variables (window function)</td></tr>
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">write_labelled_csv</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">write_labelled_csv2</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">write_labelled_fst</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">write_labelled_spss</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">write_labelled_tab</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">write_labelled_tab2</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">write_labelled_xlsx</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">write_labels</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="write_labelled_csv.html">write_labels_spss</a></td>
+<td>Write labelled data to file or export file to SPSS syntax.</td></tr>
+<tr><td style="width: 25%;"><a href="w_mean.html">w_cor</a></td>
+<td>Compute various weighted statistics</td></tr>
+<tr><td style="width: 25%;"><a href="w_mean.html">w_cov</a></td>
+<td>Compute various weighted statistics</td></tr>
+<tr><td style="width: 25%;"><a href="w_mean.html">w_mad</a></td>
+<td>Compute various weighted statistics</td></tr>
+<tr><td style="width: 25%;"><a href="w_mean.html">w_max</a></td>
+<td>Compute various weighted statistics</td></tr>
+<tr><td style="width: 25%;"><a href="w_mean.html">w_mean</a></td>
+<td>Compute various weighted statistics</td></tr>
+<tr><td style="width: 25%;"><a href="w_mean.html">w_median</a></td>
+<td>Compute various weighted statistics</td></tr>
+<tr><td style="width: 25%;"><a href="w_mean.html">w_min</a></td>
+<td>Compute various weighted statistics</td></tr>
+<tr><td style="width: 25%;"><a href="w_mean.html">w_n</a></td>
+<td>Compute various weighted statistics</td></tr>
+<tr><td style="width: 25%;"><a href="w_mean.html">w_pearson</a></td>
+<td>Compute various weighted statistics</td></tr>
+<tr><td style="width: 25%;"><a href="w_mean.html">w_sd</a></td>
+<td>Compute various weighted statistics</td></tr>
+<tr><td style="width: 25%;"><a href="w_mean.html">w_se</a></td>
+<td>Compute various weighted statistics</td></tr>
+<tr><td style="width: 25%;"><a href="w_mean.html">w_spearman</a></td>
+<td>Compute various weighted statistics</td></tr>
+<tr><td style="width: 25%;"><a href="w_mean.html">w_sum</a></td>
+<td>Compute various weighted statistics</td></tr>
+<tr><td style="width: 25%;"><a href="w_mean.html">w_var</a></td>
+<td>Compute various weighted statistics</td></tr>
+</table>
+
+<h2><a id="X">-- X --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="xl_write.html">xl_write</a></td>
+<td>Write tables and other objects to an xlsx file with formatting</td></tr>
+<tr><td style="width: 25%;"><a href="xl_write.html">xl_write.default</a></td>
+<td>Write tables and other objects to an xlsx file with formatting</td></tr>
+<tr><td style="width: 25%;"><a href="xl_write.html">xl_write.etable</a></td>
+<td>Write tables and other objects to an xlsx file with formatting</td></tr>
+<tr><td style="width: 25%;"><a href="xl_write.html">xl_write.list</a></td>
+<td>Write tables and other objects to an xlsx file with formatting</td></tr>
+<tr><td style="width: 25%;"><a href="xl_write.html">xl_write.with_caption</a></td>
+<td>Write tables and other objects to an xlsx file with formatting</td></tr>
+<tr><td style="width: 25%;"><a href="xl_write.html">xl_write_file</a></td>
+<td>Write tables and other objects to an xlsx file with formatting</td></tr>
+</table>
+
+<h2><a id="misc">-- misc --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="vectors.html">%a%</a></td>
+<td>Infix operations on vectors - append, diff, intersection, union, replication</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">%col_in%</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="vectors.html">%d%</a></td>
+<td>Infix operations on vectors - append, diff, intersection, union, replication</td></tr>
+<tr><td style="width: 25%;"><a href="vectors.html">%e%</a></td>
+<td>Infix operations on vectors - append, diff, intersection, union, replication</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">%has%</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="vectors.html">%i%</a></td>
+<td>Infix operations on vectors - append, diff, intersection, union, replication</td></tr>
+<tr><td style="width: 25%;"><a href="if_na.html">%if_na%</a></td>
+<td>Replace values with NA and vice-versa</td></tr>
+<tr><td style="width: 25%;"><a href="recode.html">%into%</a></td>
+<td>Change, rearrange or consolidate the values of an existing or new variable. Inspired by the RECODE command from SPSS.</td></tr>
+<tr><td style="width: 25%;"><a href="if_na.html">%mis_val%</a></td>
+<td>Replace values with NA and vice-versa</td></tr>
+<tr><td style="width: 25%;"><a href="if_na.html">%na_if%</a></td>
+<td>Replace values with NA and vice-versa</td></tr>
+<tr><td style="width: 25%;"><a href="nest.html">%nest%</a></td>
+<td>Compute nested variable(-s) from several variables</td></tr>
+<tr><td style="width: 25%;"><a href="vectors.html">%n_d%</a></td>
+<td>Infix operations on vectors - append, diff, intersection, union, replication</td></tr>
+<tr><td style="width: 25%;"><a href="vectors.html">%n_i%</a></td>
+<td>Infix operations on vectors - append, diff, intersection, union, replication</td></tr>
+<tr><td style="width: 25%;"><a href="vectors.html">%r%</a></td>
+<td>Infix operations on vectors - append, diff, intersection, union, replication</td></tr>
+<tr><td style="width: 25%;"><a href="count_if.html">%row_in%</a></td>
+<td>Count/sum/average/other functions on values that meet a criterion</td></tr>
+<tr><td style="width: 25%;"><a href="criteria.html">%thru%</a></td>
+<td>Criteria functions</td></tr>
+<tr><td style="width: 25%;"><a href="vars.html">%to%</a></td>
+<td>Get variables/range of variables by name/by pattern.</td></tr>
+<tr><td style="width: 25%;"><a href="vars.html">%to_list%</a></td>
+<td>Get variables/range of variables by name/by pattern.</td></tr>
+<tr><td style="width: 25%;"><a href="vectors.html">%u%</a></td>
+<td>Infix operations on vectors - append, diff, intersection, union, replication</td></tr>
+<tr><td style="width: 25%;"><a href="vars.html">..</a></td>
+<td>Get variables/range of variables by name/by pattern.</td></tr>
+<tr><td style="width: 25%;"><a href="vars.html">..f</a></td>
+<td>Get variables/range of variables by name/by pattern.</td></tr>
+<tr><td style="width: 25%;"><a href="vars.html">..p</a></td>
+<td>Get variables/range of variables by name/by pattern.</td></tr>
+<tr><td style="width: 25%;"><a href="vars.html">..t</a></td>
+<td>Get variables/range of variables by name/by pattern.</td></tr>
+</table>
+</div></body></html>
