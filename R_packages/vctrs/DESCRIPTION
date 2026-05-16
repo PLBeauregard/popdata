@@ -39,10 +39,5 @@ Author: Hadley Wickham [aut],
 Maintainer: Davis Vaughan <davis@posit.co>
 Repository: CRAN
 Date/Publication: 2023-12-01 23:50:02 UTC
-Built: R 4.3.3; aarch64-apple-darwin20; 2025-01-24 17:56:25 UTC; unix
-Archs: vctrs.so.dSYM
-RemoteType: standard
-RemotePkgRef: vctrs
-RemoteRef: vctrs
-RemoteRepos: https://cran.rstudio.com
-RemoteSha: 0.6.5
+Built: R 4.3.3; x86_64-w64-mingw32; 2025-04-08 08:22:47 UTC; windows
+Archs: x64

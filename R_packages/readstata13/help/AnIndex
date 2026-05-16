@@ -1,7 +1,5 @@
-readstata13-package	readstata13
 'varlabel<-'	varlabel
 as.caldays	as.caldays
-get.frames	get.frames
 get.label	get.label
 get.label.name	get.label.name
 get.label.tables	get.label.tables
@@ -9,7 +7,6 @@ get.lang	get.lang
 get.origin.codes	get.origin.codes
 maxchar	maxchar
 read.dta13	read.dta13
-read.dtas	read.dtas
 readstata13	readstata13
 save.dta13	save.dta13
 saveToExport	saveToExport

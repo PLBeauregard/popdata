@@ -1,7 +1,7 @@
 Package: readstata13
 Type: Package
 Title: Import 'Stata' Data Files
-Version: 0.11.0
+Version: 0.10.1
 Authors@R: c(
     person("Jan Marvin", "Garbuszus",
     email = "jan.garbuszus@ruhr-uni-bochum.de", role = c("aut")),
@@ -20,12 +20,11 @@ License: GPL-2 | file LICENSE
 Imports: Rcpp (>= 0.11.5)
 LinkingTo: Rcpp
 ByteCompile: yes
-Suggests: testthat, knitr, rmarkdown, curl, png, expss, labelled
-VignetteBuilder: knitr
+Suggests: testthat
 Encoding: UTF-8
-RoxygenNote: 7.3.2
+RoxygenNote: 7.2.3
 NeedsCompilation: yes
-Packaged: 2025-04-25 10:18:03 UTC; sj
+Packaged: 2023-02-21 14:05:39 UTC; sj
 Author: Jan Marvin Garbuszus [aut],
   Sebastian Jeworutzki [aut, cre]
     (<https://orcid.org/0000-0002-2671-5253>),
@@ -36,11 +35,6 @@ Author: Jan Marvin Garbuszus [aut],
   Kevin Jin [ctb]
 Maintainer: Sebastian Jeworutzki <Sebastian.Jeworutzki@ruhr-uni-bochum.de>
 Repository: CRAN
-Date/Publication: 2025-04-25 11:20:02 UTC
-Built: R 4.3.3; aarch64-apple-darwin20; 2025-04-25 12:24:52 UTC; unix
-Archs: readstata13.so.dSYM
-RemoteType: standard
-RemotePkgRef: readstata13
-RemoteRef: readstata13
-RemoteRepos: https://cran.rstudio.com
-RemoteSha: 0.11.0
+Date/Publication: 2023-02-21 16:00:04 UTC
+Built: R 4.3.3; x86_64-w64-mingw32; 2025-04-07 00:26:00 UTC; windows
+Archs: x64
